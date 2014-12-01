@@ -94,7 +94,7 @@ window.Boundarizr = (function() {
     var rules = window.getMatchedCSSRules(element);
 
     // Check on the element itself.
-    if (rules === null && element.style[property])
+    if (element.style[property])
       return element.style[property];
 
     if (rules === null)
