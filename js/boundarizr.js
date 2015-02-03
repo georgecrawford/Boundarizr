@@ -204,6 +204,7 @@ window.Boundarizr = (function() {
       boundaryHideButton.style.position = 'fixed';
       boundaryHideButton.style.top = '10px';
       boundaryHideButton.style.left = '10px';
+      boundaryHideButton.style.zIndex = '1';
       boundaryHideButton.textContent = 'Hide Boundaries';
       boundaryHideButton.addEventListener('click', hideBoundaries);
 
