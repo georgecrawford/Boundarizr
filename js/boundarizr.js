@@ -31,6 +31,11 @@ window.Boundarizr = (function() {
 
         default:
           if (isBoundary(element)) {
+            if (!element.offsetHeight) {
+              console.log('Boundarizr: skipping boundary element with no height:', element);
+              break;
+            }
+
             var boundary = element.getBoundingClientRect();
             boundary.label = element.localName;
 
